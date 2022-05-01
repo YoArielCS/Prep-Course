@@ -79,7 +79,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1 == str2) {
+  if (str1.length == str2.length) {
     return true;
   }
     return false;  
@@ -208,10 +208,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-     var combinar = 'Soy '+ nombre +' '+ apellido; 
+     var combinar = nombre +' '+ apellido; 
     return combinar;
-
-  
 }
 
 function obtenerSaludo(nombre) {
@@ -254,7 +252,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var cambio = euro * 1.20 + ' dolares'
+  var cambio = euro * 1.20
   return cambio;  
   
 }
